@@ -1,0 +1,5 @@
+message Employee {
+    required string name = 1;
+    required int32 age = 2;
+    required string ni_number = 3;
+}
