@@ -3,18 +3,18 @@ package main
 import (
 	"log"
 
-	employee "./fourth_employee"
+	people "./fourth_people"
 	"code.google.com/p/goprotobuf/proto"
 )
 
 func main() {
-	test := &employee.Employee{}
+	test := &people.Employee{}
 	test.Name = proto.String("Simon")
 	test.Age = proto.Int32(37)
 	test.NiNumber = proto.String("JJ817203D")
 	d, _ := proto.Marshal(test)
 
-	newTest := &employee.Employee{}
+	newTest := &people.Employee{}
 
 	proto.Unmarshal(d, newTest)
 
