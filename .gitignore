@@ -1,2 +1,9 @@
 /go/fourth_people/
 /go/client/
+bin
+obj
+*.suo
+*.user
+packages
+client.exe
+server.exe
